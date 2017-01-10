@@ -14,7 +14,7 @@ You can get pinouts on the web, I have included the one I used called "Raspeberr
 
 1) Install Minibian to the MicroSD card using the instructions provided at: https://minibianpi.wordpress.com/
 
-2) Log-in using your keyboard
+2) Log-in using your keyboard, username root, password raspberry
 
 3) Install a WIFI driver if you need it (Rpi3) using your ethernet wire:
 
