@@ -36,7 +36,7 @@ apt-get install gcc
 apt-get install wiringpi
 
 
-8) Go to https://github.com/backofficeshow and get mouseIO.c
+8) Go to https://github.com/backofficeshow/ATARIPiMouse and get mouseIO.c
 
 9) Copy mouseIO.c to somewhere suitable on the file system (I use /root) from Github
 
