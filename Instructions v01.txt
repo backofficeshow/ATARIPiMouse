@@ -1,0 +1,57 @@
+Fresh Installation (Atari to Raspberry Pi Interface)
+@backofficeshow
+www.backofficeshow.com/youtube
+https://github.com/backofficeshow
+v0.1
+
+WARNING: There is the possibility of damaging both your hardware and yourself doing this sort of thing. Please be careful and 
+be aware on this sort of project, errors in software CAN AND WILL damage hardware!
+
+PREREQUISITES:
+
+You have actually hooked up your raspberry PI to your ATARI ST with a suitable cable as specified in "Atari to Raspberry Pi Cable v01.jpg" to your raspberry Pi. 
+You can get pinouts on the web, I have included the one I used called "Raspeberry Pi3 connector Pinout.png"
+
+1) Install Minibian to the MicroSD card using the instructions provided at: https://minibianpi.wordpress.com/
+
+2) Log-in using your keyboard
+
+3) Install a WIFI driver if you need it (Rpi3) using your ethernet wire:
+
+apt-get install firmware-brcm80211 pi-bluetooth wpasupplicant
+
+4) Configure the WIFI, use a guide like: https://gerge.ly/how-tos/raspberry-pi-3-b-minimal-setup/ or whatever you can find that works!
+
+5) Update the system:
+
+apt-get update
+apt-get upgrade
+
+6) Install a c compiler:
+
+apt-get install gcc
+
+7) We can install the WiringPi GPIO interface (as documented here http://wiringpi.com/ ) using: 
+
+apt-get install wiringpi
+
+
+8) Go to https://github.com/backofficeshow and get mouseIO.c
+
+9) Copy mouseIO.c to somewhere suitable on the file system (I use /root) from Github
+
+10) Compile using:
+
+	gcc -Wall -o mouseIO mouseIO.c -lwiringPi
+
+11) Test it out by running ./mouseIO.c
+
+12) Your mouse movements (from a mouse plugged into your Pi) should be reflected on your ATARI screen.
+
+13) Follow this guide on how to make your mouse program boot automatically on powerup: https://www.cyberciti.biz/tips/linux-how-to-run-a-command-when-boots-up.html
+
+14) Tweet me at how you got on (if its good news!) and let me know how you have made it better!
+
+
+
+Have Fun!
