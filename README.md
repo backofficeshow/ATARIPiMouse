@@ -3,6 +3,8 @@ The software to emulate an ATARI ST mouse using a Raspberry Pi as the hardware i
 
 Youtube video on this can be found at: https://youtu.be/ED3PSM4Mwss
 
+Youtube playlist on all my Atari ST activities at: https://www.youtube.com/playlist?list=PLjXZsqjhnBUp37Nqo30A-rKNJkGeGCVBf
+
 Please see the readme.txt on my suggested build steps. The Youtube video explains what I did.
 
 
