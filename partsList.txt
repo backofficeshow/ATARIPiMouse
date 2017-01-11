@@ -1,0 +1,36 @@
+Parts List (as taken from the youTube description at https://youtu.be/ED3PSM4Mwss)
+Andrew Armstrong v0.1
+
+I have proivided (what I hope!) to be a pretty complete shopping list for you to make your own, I tend to use Amazon and eBay, but I am posting only Amazon links as eBay is very transient!
+
+RGB Scart to HDMI Upscaler:
+Amazon USA: http://amzn.to/2j6M5cV
+Amazon UK: http://amzn.to/2j0wyZO
+
+ST Scart LEAD:
+Amazon UK: http://amzn.to/2iEJT93
+(This does not have the additional STE audio phonos those are available as well - consider how you will play the audio)
+
+Suitable wireless mice:
+Amazon USA: http://amzn.to/2juq4Bu
+Amazon UK: http://amzn.to/2j5hYSY
+
+Raspberry Pi:
+Amazon USA:http://amzn.to/2jurT1l
+Amazon UK: http://amzn.to/2iccvdY
+
+D-Sub 9pin connector:
+Amazon USA: http://amzn.to/2j5j69a
+Amazon UK: http://amzn.to/2icfJy0
+
+Resistors:
+Amazon USA: http://amzn.to/2jufWbO
+Amazon UK: http://amzn.to/2iELz2y
+
+Jumper wire:
+Amazon USA: http://amzn.to/2juirLB
+Amazon UK: http://amzn.to/2jCyJG8
+
+Pin Header (Socket on the Pi):
+Amazon USA: http://amzn.to/2j6LY16
+Amazon UK: http://amzn.to/2jCyQBs
