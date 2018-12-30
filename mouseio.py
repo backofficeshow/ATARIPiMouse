@@ -34,6 +34,11 @@ velocityX = 1
 velocityY = 1
 ourDelayX = 0.0028
 ourDelayY = 0.0028
+velX = 45
+velY = 45
+
+GPIO.output(LB_PIN, GPIO.HIGH)
+GPIO.output(RB_PIN, GPIO.HIGH)
 
 def buttonAction (bLeft,bRight):
   global oldL, oldR
@@ -51,15 +56,17 @@ def buttonAction (bLeft,bRight):
     oldR = bRight
 
 def moveAction (x,y):
-  global velocityX,velocityY,ourDelayX,ourDelayY
+  global velocityX,velocityY,ourDelayX,ourDelayY,velX,velY
   if abs(y)>1 :
-    for i in range(velocityY):
+    vel = velocityY+(abs(y)/velY)
+    for i in range(vel):
       if y<0 :
         moveDown()
       else :
         moveUp()
   if abs(x)>1 :
-    for i in range(velocityX):
+    vel = velocityX+(abs(x)/velX)
+    for i in range(vel):
       if x<0 :
         moveLeft ()
       else:
@@ -76,16 +83,16 @@ def sendMove (first,second,delay):
   GPIO.output(second,GPIO.LOW)
   time.sleep(delay)
 
-def moveDown ():
+def moveLeft ():
   sendMove (XB_PIN,XA_PIN,ourDelayY)
 
-def moveUp ():
+def moveRight ():
   sendMove (XA_PIN,XB_PIN,ourDelayY)
 
-def moveLeft ():
+def moveUp ():
   sendMove (YA_PIN,YB_PIN,ourDelayX)
 
-def moveRight ():
+def moveDown ():
   sendMove (YB_PIN,YA_PIN,ourDelayX)
 
 def getMouseEvent():
@@ -95,7 +102,7 @@ def getMouseEvent():
   bMiddle = ( button & 0x4 ) > 0
   bRight = ( button & 0x2 ) > 0
   x,y = struct.unpack( "bb", buf[1:] )
-  print ("L:%d, M: %d, R: %d, x: %d, y: %d\n" % (bLeft,bMiddle,bRight, x, y) )
+  #print ("L:%d, M: %d, R: %d, x: %d, y: %d\n" % (bLeft,bMiddle,bRight, x, y) )
   buttonAction (bLeft,bRight)
   moveAction(x,y)
   
